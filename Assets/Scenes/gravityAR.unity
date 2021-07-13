@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313612729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 12.43}
+  m_LocalPosition: {x: 1.12, y: 21.82, z: 6.99}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 1118295076}
@@ -429,7 +429,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323334290}
-  m_Mesh: {fileID: 1983316883}
+  m_Mesh: {fileID: 1810673320}
 --- !u!23 &323334293
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1973249368}
+  - {fileID: 2146805622}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   earth: {fileID: 1118295076}
   button: {fileID: 459095524}
-  speed: 10
+  speed: 40
 --- !u!33 &459095521
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mName: button
-  mSensitivity: 2
+  mSensitivity: 0
   mHasUpdatedPose: 1
   mPrevTransform:
     e00: 10
@@ -920,11 +920,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.492
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.478
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sun: {fileID: 313612730}
   button: {fileID: 1040351063}
-  speed: 10
+  speed: 50
 --- !u!33 &1040351060
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mName: 
-  mSensitivity: 2
+  mSensitivity: 0
   mHasUpdatedPose: 1
   mPrevTransform:
     e00: 10
@@ -1481,42 +1481,13 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745865637}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1973249368
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'teste_pedraMaterial
-
-    16076'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e8225e659033456ebefa7cd02f9f6d38, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
---- !u!43 &1983316883
+--- !u!43 &1810673320
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh16064
+  m_Name: ImageTargetMesh16056
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1838,3 +1809,32 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &2146805622
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'teste_pedraMaterial
+
+    20696'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e8225e659033456ebefa7cd02f9f6d38, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []

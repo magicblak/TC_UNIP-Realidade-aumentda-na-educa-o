@@ -35,6 +35,6 @@ public class Translation : MonoBehaviour
     void Update()
     {
         if (istranslating)
-            sun.Rotate(Vector3.up, speed * Time.deltaTime, Space.World);
+            sun.Rotate(Vector3.right, speed * Time.deltaTime, Space.World);
     }
 }
