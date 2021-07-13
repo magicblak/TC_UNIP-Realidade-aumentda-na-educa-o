@@ -5,41 +5,36 @@ using Vuforia;
 
 public class BasicAnimation : MonoBehaviour
 {
-    public GameObject ball;
+    public Transform earth;
     public VirtualButtonBehaviour button;
-    Vector3 posinicial;
-    Rigidbody rb;
+    private bool isrotating = false;
+    public int speed = 10;
+
     // Start is called before the first frame update
     void Start()
     {
-        posinicial = ball.transform.position;
+
         button.RegisterOnButtonPressed(onButtonPressed);
         button.RegisterOnButtonReleased(onButtonRealesed);
-        rb = ball.GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeAll;
+
     }
 
     void onButtonPressed(VirtualButtonBehaviour b)
     {
-        Debug.Log("Pressiona");
-        rb.constraints = RigidbodyConstraints.None;
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
+        Debug.Log("Acionou!");
+        isrotating = true;
     }
 
     void onButtonRealesed(VirtualButtonBehaviour b)
     {
-        Debug.Log("Não Pressiona");
-        rb.constraints = RigidbodyConstraints.FreezeAll;
+        Debug.Log("Parou de acionar!");
+        isrotating = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        ball.transform.localPosition = posinicial;
+        if(isrotating)
+            earth.Rotate(Vector3.up, speed * Time.deltaTime, Space.World);
     }
 }
