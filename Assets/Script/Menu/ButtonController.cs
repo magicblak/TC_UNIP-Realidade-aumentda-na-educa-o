@@ -17,10 +17,11 @@ public class ButtonController : MonoBehaviour
         button = button_obj.GetComponent<Button>();
         container = GameObject.Find("buttons_container");
         int posy = 220;
-        int height = 30;
-        posy += (height * container.transform.childCount);
+        int height = 40;
+        posy -= (height * container.transform.childCount);
         button_obj.transform.SetParent(container.transform);
         button.onClick.AddListener(clickButton);
+        button_obj.GetComponent<RectTransform>().localPosition = new Vector3(18, posy, 0);
     }
 
     private void clickButton()

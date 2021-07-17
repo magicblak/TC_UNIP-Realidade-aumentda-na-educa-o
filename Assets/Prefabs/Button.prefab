@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt_button: {fileID: 1966296194228080373}
   button_obj: {fileID: 5729591013729297053}
-  button: {fileID: 2630392872071422748}
+  name_obj: SpaceAR
 --- !u!1 &7055076886280178441
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,4 +215,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: SpaceAR
