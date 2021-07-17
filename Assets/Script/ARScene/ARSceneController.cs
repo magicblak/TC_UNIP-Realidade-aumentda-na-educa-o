@@ -5,10 +5,10 @@ using UnityEngine;
 public class ARSceneController : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         string name = PlayerPrefs.GetString("name");
-        Debug.Log(name);
-        Instantiate(Resources.Load("Assets/Prefabs/SpaceAR"));
+        Instantiate(Resources.Load<GameObject>("Prefabs/" + name));
+        Screen.orientation = ScreenOrientation.AutoRotation;
     }
 }

@@ -200,9 +200,9 @@ GameObject:
   - component: {fileID: 1719978064}
   - component: {fileID: 1719978063}
   - component: {fileID: 1719978062}
+  - component: {fileID: 1719978065}
   - component: {fileID: 1719978061}
   - component: {fileID: 1719978060}
-  - component: {fileID: 1719978065}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera

@@ -16,20 +16,19 @@ public class ButtonController : MonoBehaviour
     {
         button = button_obj.GetComponent<Button>();
         container = GameObject.Find("buttons_container");
-        int posy = 220;
-        int height = 40;
+        int posy = 630;
+        int height = 210;
         posy -= (height * container.transform.childCount);
         button_obj.transform.SetParent(container.transform);
         button.onClick.AddListener(clickButton);
-        button_obj.GetComponent<RectTransform>().localPosition = new Vector3(18, posy, 0);
+        button_obj.GetComponent<RectTransform>().localPosition = new Vector3(24, posy, 0);
     }
 
     private void clickButton()
     {
         //Carregar a cena com informações de ambiente
-        Debug.Log(name_obj);
         PlayerPrefs.SetString("name", name_obj);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
     public void setName(string name_txt)
