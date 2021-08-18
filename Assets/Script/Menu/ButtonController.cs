@@ -8,6 +8,7 @@ public class ButtonController : MonoBehaviour
 {
     [SerializeField] private Text txt_button;
     [SerializeField] private GameObject button_obj;
+    [SerializeField] private Image image;
     private Button button;
     private GameObject container;
     public string name_obj;
@@ -17,11 +18,13 @@ public class ButtonController : MonoBehaviour
         button = button_obj.GetComponent<Button>();
         container = GameObject.Find("buttons_container");
         int posy = 630;
-        int height = 210;
+        int height = 290;
         posy -= (height * container.transform.childCount);
         button_obj.transform.SetParent(container.transform);
         button.onClick.AddListener(clickButton);
         button_obj.GetComponent<RectTransform>().localPosition = new Vector3(24, posy, 0);
+        Sprite demo_image = Resources.Load<Sprite>("sprites/" + name_obj);
+        image.sprite = demo_image;
     }
 
     private void clickButton()
@@ -31,7 +34,7 @@ public class ButtonController : MonoBehaviour
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
-    public void setName(string name_txt)
+    public void setSettings(string name_txt)
     {
         name_obj = name_txt;
         button_obj.name = name_obj;

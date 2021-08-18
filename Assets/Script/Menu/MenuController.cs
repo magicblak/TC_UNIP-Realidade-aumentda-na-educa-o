@@ -48,7 +48,7 @@ public class MenuController : MonoBehaviour
             ArrayList itens_menu = scenes[categoria];
             for (int i = 0; i < itens_menu.Count; i++) 
             {
-                button.GetComponent<ButtonController>().setName(itens_menu[i].ToString());
+                button.GetComponent<ButtonController>().setSettings(itens_menu[i].ToString());
                 Instantiate(button, new Vector3(0, 0, 0), Quaternion.identity);
             }
         }
