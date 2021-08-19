@@ -51,18 +51,18 @@ public class SpaceMovement : MonoBehaviour
         if (!controller) return;
         planet.localPosition = calculeCircle(segment, current_segment);
         current_segment++;
+        Debug.Log(current_segment);
         if (current_segment > segment) current_segment = 0;
     }
 
-    private Vector3 calculeCircle(int segments, int current_segment)
+    public static Vector3 calculeCircle(int segments, int current_segment)
     {
-        float posy, posz, angle;
-        float yaxis = 2, zaxis = 1;
+        float posy, posx, angle;
+        float yaxis = 25, xaxis = 30;
         angle = ((float)current_segment / (float)segments) * 360 * Mathf.Deg2Rad;
         posy = Mathf.Cos(angle) * yaxis;
-        posz = Mathf.Sin(angle) * zaxis;
-        Debug.Log(new Vector3(0, posy, posz));
-        return new Vector3(posz, posy, 0);
+        posx = Mathf.Sin(angle) * xaxis;
+        return new Vector3(posx, posy, 9.49f);
     }
 
     private void rotationPlanet()
