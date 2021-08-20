@@ -51,7 +51,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,7 +91,7 @@ TextMesh:
   m_FontSize: 12
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 2037716982477557023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.38, y: 1.86, z: 0}
-  m_LocalScale: {x: 0.4262211, y: 0.8661485, z: 1}
+  m_LocalScale: {x: 0.4109299, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2037716984045875023}
   m_RootOrder: 1
@@ -345,7 +345,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -386,7 +386,7 @@ TextMesh:
   m_FontSize: 10
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -416,8 +416,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716982581097339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.52, y: 1.86, z: 0}
-  m_LocalScale: {x: 0.4262211, y: 0.8661485, z: 1}
+  m_LocalPosition: {x: -3.69, y: 1.21, z: -0}
+  m_LocalScale: {x: 0.4109299, y: 0.8661485, z: 1}
   m_Children: []
   m_Father: {fileID: 2037716983011560560}
   m_RootOrder: 1
@@ -441,7 +441,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -482,7 +482,7 @@ TextMesh:
   m_FontSize: 10
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -619,7 +619,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -659,7 +659,7 @@ TextMesh:
   m_FontSize: 12
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -688,8 +688,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716983011560563}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.896869, y: 2, z: 0.09524657}
-  m_LocalScale: {x: 0.24332607, y: 0.21571249, z: 1}
+  m_LocalPosition: {x: -2.703, y: 2, z: 0.12}
+  m_LocalScale: {x: 0.4109299, y: 0.2921765, z: 1}
   m_Children:
   - {fileID: 2037716982408137408}
   - {fileID: 2037716982581097336}
@@ -943,7 +943,6 @@ GameObject:
   - component: {fileID: 2037716983324158256}
   - component: {fileID: 2037716983324158259}
   - component: {fileID: 2037716983324158258}
-  - component: {fileID: 2037716983324158261}
   m_Layer: 0
   m_Name: button_translation
   m_TagString: Untagged
@@ -1062,26 +1061,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716983324158263}
   m_Mesh: {fileID: 0}
---- !u!114 &2037716983324158261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037716983324158263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a535722b1688bd4b965a2757cad7aa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planet: {fileID: 2037716983552955265}
-  explain_text: {fileID: 2037716983011560563}
-  other_text: {fileID: 2037716984045875022}
-  button: {fileID: 2037716983324158257}
-  speed: 50
-  rotation_direction: {x: 0, y: 1, z: 0}
-  segment: 240
-  is_orbit: 1
 --- !u!1 &2037716983370629298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1112,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1175,7 +1154,7 @@ TextMesh:
   m_FontSize: 12
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 8385d2a100409854e8228a0ef23e3b92, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -1372,7 +1351,6 @@ GameObject:
   - component: {fileID: 2037716983606699528}
   - component: {fileID: 2037716983606699531}
   - component: {fileID: 2037716983606699530}
-  - component: {fileID: 2037716983606699542}
   m_Layer: 0
   m_Name: button_movement_complete
   m_TagString: Untagged
@@ -1490,25 +1468,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716983606699532}
   m_Mesh: {fileID: 0}
---- !u!114 &2037716983606699542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037716983606699532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 380cae501134b744cb7141c1919b56dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  earth: {fileID: 2037716983552955265}
-  button: {fileID: 2037716983606699529}
-  speed_rotation: 40
-  speed_translation: 50
-  rotation_direction: {x: 0, y: 1, z: 0}
-  translation_direction: {x: 0, y: 1, z: 0}
-  segment: 240
 --- !u!1 &2037716983652421599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,13 +1493,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716983652421599}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.12, y: 20.2, z: 9.61}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 20.2, z: 9.389999}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 3909412476011219740}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2037716983652421595
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1604,7 +1563,6 @@ GameObject:
   - component: {fileID: 2037716983772769156}
   - component: {fileID: 2037716983772769159}
   - component: {fileID: 2037716983772769155}
-  - component: {fileID: 2037716983772769158}
   m_Layer: 0
   m_Name: button_rotation
   m_TagString: Untagged
@@ -1736,26 +1694,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716983772769208}
   m_CullTransparentMesh: 1
---- !u!114 &2037716983772769158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037716983772769208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a535722b1688bd4b965a2757cad7aa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planet: {fileID: 2037716983552955265}
-  explain_text: {fileID: 2037716984045875022}
-  other_text: {fileID: 2037716983011560563}
-  button: {fileID: 2037716983772769154}
-  speed: 40
-  rotation_direction: {x: 0, y: 0, z: 1}
-  segment: 0
-  is_orbit: 0
 --- !u!1 &2037716984045875022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,8 +1719,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037716984045875022}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.01, y: 2, z: 0.15}
-  m_LocalScale: {x: 0.23462, y: 0.2195, z: 1}
+  m_LocalPosition: {x: 2.71524, y: 2, z: 0.12}
+  m_LocalScale: {x: 0.4109299, y: 0.29217646, z: 1}
   m_Children:
   - {fileID: 2037716983272788875}
   - {fileID: 2037716982477557020}
@@ -2105,11 +2043,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4abe6e3d74eca4c9240c6e071067e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement_button: {fileID: 2037716983606699532}
+  complete_movement_button: {fileID: 2037716983606699532}
   rotation_button: {fileID: 2037716983772769208}
   translation_button: {fileID: 2037716983324158263}
   rotation_text: {fileID: 2037716984045875022}
   translation_text: {fileID: 2037716983011560563}
+  sun: {fileID: 2037716983652421596}
+  sun_rotation_direction: {x: 0, y: 1, z: 0}
+  sun_rotation_velocity: 15
+  earth: {fileID: 2037716983552955265}
+  earth_rotation_direction: {x: 0, y: 1, z: 0}
+  earth_rotation_velocity: 30
+  segments: 200
+  current_segment: 50
+  earth_translation_with: 22
+  earth_translation_height: 30
+  stop: 0
 --- !u!1001 &2037716983552821517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2127,27 +2076,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.49
+      value: 9.29
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 4cca50b46e375734586a1cf77cb87a37, type: 3}
       propertyPath: m_LocalRotation.w
