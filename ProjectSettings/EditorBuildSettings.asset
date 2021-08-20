@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/gravityAR.unity
+    path: Assets/Scenes/InitialMenu.unity
+    guid: b42ede1243828f84e9ad61bd2d366bcc
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d6c18607a1e82ec45bb899ba77f57f3b, type: 2}
