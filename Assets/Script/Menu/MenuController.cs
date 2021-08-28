@@ -21,6 +21,7 @@ public class MenuController : MonoBehaviour
     {
         categories = new List<string>();
         categories.Add("Ciência");
+        categories.Add("Biologia");
         categories_menu.AddOptions(categories);
         categories_menu.onValueChanged.AddListener(delegate
         {
@@ -34,6 +35,9 @@ public class MenuController : MonoBehaviour
         itens_menu.Add("SpaceAR");
         scenes = new Dictionary<string, ArrayList>();
         scenes.Add("Ciência", itens_menu);
+        itens_menu = new ArrayList();
+        itens_menu.Add("SkeletonAR");
+        scenes.Add("Biologia", itens_menu);
     }
 
     private void prepareButtons(string categoria)

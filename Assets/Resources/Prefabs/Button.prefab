@@ -213,7 +213,7 @@ MonoBehaviour:
   txt_button: {fileID: 1966296194228080373}
   button_obj: {fileID: 5729591013729297053}
   image: {fileID: 4968984225628003823}
-  name_obj: SpaceAR
+  name_obj: SkeletonAR
 --- !u!1 &7055076886280178441
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,4 +292,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SpaceAR
+  m_Text: SkeletonAR
