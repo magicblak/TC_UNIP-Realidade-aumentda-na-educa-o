@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="empty_room" size="50.000000 26.785715" />
+    <ImageTarget name="empty_room" size="50.000000 25.000000" />
     <ImageTarget name="space" size="50.000000 28.125000" />
     <ImageTarget name="teste_pedra" size="50.000000 36.111111" />
   </Tracking>
