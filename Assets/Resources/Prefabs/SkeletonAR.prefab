@@ -885,10 +885,10 @@ MonoBehaviour:
   mTrackableName: empty_room
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Teste.xml
-  mAspectRatio: 0.5
+  mAspectRatio: 0.56266665
   mImageTargetType: 0
   mWidth: 50
-  mHeight: 25
+  mHeight: 28.133333
   mRuntimeTexture: {fileID: 0}
 --- !u!114 &5862837751416711290
 MonoBehaviour:

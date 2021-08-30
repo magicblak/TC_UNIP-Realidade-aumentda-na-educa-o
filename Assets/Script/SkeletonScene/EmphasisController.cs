@@ -20,6 +20,7 @@ public class EmphasisController : MonoBehaviour
 
     private void onEmphasisButtonPressed(VirtualButtonBehaviour b)
     {
+        Debug.Log(emphasis_text.text);
         if (EmphasisController.general_controller) return;
         EmphasisController.general_controller = true;
         local_controller = true;
