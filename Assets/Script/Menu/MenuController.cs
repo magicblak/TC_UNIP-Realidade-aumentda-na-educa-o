@@ -22,6 +22,7 @@ public class MenuController : MonoBehaviour
         categories = new List<string>();
         categories.Add("Ciência");
         categories.Add("Biologia");
+        categories.Add("Geografia");
         categories_menu.AddOptions(categories);
         categories_menu.onValueChanged.AddListener(delegate
         {
@@ -38,6 +39,9 @@ public class MenuController : MonoBehaviour
         itens_menu = new ArrayList();
         itens_menu.Add("SkeletonAR");
         scenes.Add("Biologia", itens_menu);
+        itens_menu = new ArrayList();
+        itens_menu.Add("VolcanoAR");
+        scenes.Add("Geografia", itens_menu);
     }
 
     private void prepareButtons(string categoria)
