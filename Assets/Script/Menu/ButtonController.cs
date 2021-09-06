@@ -25,6 +25,7 @@ public class ButtonController : MonoBehaviour
         button_obj.GetComponent<RectTransform>().localPosition = new Vector3(24, posy, 0);
         Sprite demo_image = Resources.Load<Sprite>("sprites/" + name_obj);
         image.sprite = demo_image;
+        button_obj.GetComponent<RectTransform>().localScale = Vector3.one;
     }
 
     private void clickButton()
