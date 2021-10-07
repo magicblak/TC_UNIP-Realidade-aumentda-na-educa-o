@@ -20,7 +20,6 @@ public class SpaceControllerInterface : MonoBehaviour
     [SerializeField] private int current_segment;
     [SerializeField] private float earth_translation_with;
     [SerializeField] private float earth_translation_height;
-    private Vector3 earth_pos_init;
     private SpaceMovement movimenter;
     [SerializeField] private bool stop;
     private bool do_earth_complete_movement;
@@ -32,14 +31,13 @@ public class SpaceControllerInterface : MonoBehaviour
         do_earth_complete_movement = false;
         do_earth_rotation = false;
         do_earth_translation = false;
-        earth_pos_init = earth.position;
         movimenter = new SpaceMovement();
         complete_movement_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(onCompleteMovementButtonPressed);
         complete_movement_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(onCompleteMovementButtonRealesed);
         rotation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(onRotationButtonPressed);
         rotation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(onRotationButtonRealesed);
         translation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(onTranslationButtonPressed);
-        translation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(onTranslationMovementButtonRealesed);
+        translation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(onTranslationButtonRealesed);
     }
 
     private void onCompleteMovementButtonPressed(VirtualButtonBehaviour b)
@@ -85,7 +83,7 @@ public class SpaceControllerInterface : MonoBehaviour
         rotation_button.SetActive(false);
     }
 
-    private void onTranslationMovementButtonRealesed(VirtualButtonBehaviour b)
+    private void onTranslationButtonRealesed(VirtualButtonBehaviour b)
     {
         if (do_earth_complete_movement || do_earth_rotation) return;
         do_earth_translation = false;
@@ -97,7 +95,6 @@ public class SpaceControllerInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //verifyCompleteMovementButtom();
         actions();
     }
 
@@ -134,10 +131,4 @@ public class SpaceControllerInterface : MonoBehaviour
         earthRotation();
         earthTranslation();
     }
-    /*
-    private void verifyCompleteMovementButtom()
-    {
-        if (rotation_text.activeSelf || translation_text.activeSelf) complete_movement_button.SetActive(false);
-        else complete_movement_button.SetActive(true);
-    }*/
 }
