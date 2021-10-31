@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class ReturnButton : MonoBehaviour
 {
-    [SerializeField] private Button returner;
-    // Start is called before the first frame update
+    [SerializeField] private Button returner;//Botão para retornar ao menu
+    //Executa sempre que a classe for instanciada na cena, similar a um construtor
     private void Start()
     {
-        returner.onClick.AddListener(returnerClick);
+        returner.onClick.AddListener(returnerClick);//Evento de clique
 	}
 
     void returnerClick()
     {
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);//Retorno para cena do menu
     }
 }

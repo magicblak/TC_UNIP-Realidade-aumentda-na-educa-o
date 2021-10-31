@@ -20,8 +20,10 @@ public class CategoriesController : MonoBehaviour
     //Ação do click
     private void clickButtonCategories()
     {
+        //Varredura dos gameobjects do container
         foreach (Transform child in categories_container.transform)
         {
+            //Valida se o botão para carregar a cena AR é referente a categoria selecionada
             if (categories_button.name == child.name) child.gameObject.SetActive(true);
             else child.gameObject.SetActive(false);
         }

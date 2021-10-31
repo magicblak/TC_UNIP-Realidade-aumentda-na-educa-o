@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ARSceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Executa sempre que a classe for instanciada na cena, similar a um construtor
     void Awake()
     {
-        string name = PlayerPrefs.GetString("name");
-        Instantiate(Resources.Load<GameObject>("Prefabs/" + name));
-        Screen.orientation = ScreenOrientation.AutoRotation;
+        string name = PlayerPrefs.GetString("name");//Pegando informação salva na memoria (Nome da cena a ser carregada)
+        Instantiate(Resources.Load<GameObject>("Prefabs/" + name));//Instancia do molde da cena solicitada
+        Screen.orientation = ScreenOrientation.Landscape;//Travando a tela como paisagem
     }
 }

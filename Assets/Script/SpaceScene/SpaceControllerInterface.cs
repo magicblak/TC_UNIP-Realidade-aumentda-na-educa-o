@@ -5,33 +5,34 @@ using Vuforia;
 
 public class SpaceControllerInterface : MonoBehaviour
 {
-    [SerializeField] private GameObject complete_movement_button;
-    [SerializeField] private GameObject rotation_button;
-    [SerializeField] private GameObject translation_button;
-    [SerializeField] private GameObject rotation_text;
-    [SerializeField] private GameObject translation_text;
-    [SerializeField] private Transform sun;
-    [SerializeField] private Vector3 sun_rotation_direction;
-    [SerializeField] private int sun_rotation_velocity;
-    [SerializeField] private Transform earth;
-    [SerializeField] private Vector3 earth_rotation_direction;
-    [SerializeField] private int earth_rotation_velocity;
-    [SerializeField] private int segments;
-    [SerializeField] private int current_segment;
-    [SerializeField] private float earth_translation_with;
-    [SerializeField] private float earth_translation_height;
-    private SpaceMovement movimenter;
-    [SerializeField] private bool stop;
-    private bool do_earth_complete_movement;
-    private bool do_earth_rotation;
-    private bool do_earth_translation;
-    // Start is called before the first frame update
+    [SerializeField] private GameObject complete_movement_button;//Objeto do botão movimento completo
+    [SerializeField] private GameObject rotation_button;//Objeto do botão rotação
+    [SerializeField] private GameObject translation_button;//Objeto do botão translação
+    [SerializeField] private GameObject rotation_text;//Texto explicativo da rotação
+    [SerializeField] private GameObject translation_text;//Texto explicativo da trnalação
+    [SerializeField] private Transform sun;//Componente de transformação do sol
+    [SerializeField] private Vector3 sun_rotation_direction;//Direção da rotação
+    [SerializeField] private int sun_rotation_velocity;//Velocidade de rotação do sol
+    [SerializeField] private Transform earth;//Componente de transformação da terra
+    [SerializeField] private Vector3 earth_rotation_direction;//Direção da rotação da terra
+    [SerializeField] private int earth_rotation_velocity;//Velocidade de rotação da terra
+    [SerializeField] private int segments;//Segmentos para calculo da translação
+    [SerializeField] private int current_segment;//Segmento corrente da translação
+    [SerializeField] private float earth_translation_with;//Largura da translação
+    [SerializeField] private float earth_translation_height;//Profundidade da translação
+    private SpaceMovement movimenter;//Classe que calcula movimentos
+    [SerializeField] private bool stop;//Booleano controlador
+    private bool do_earth_complete_movement;//Controlador do movimento comleto
+    private bool do_earth_rotation;//Controlador da rotação
+    private bool do_earth_translation;//Controlador da translação
+    //Executa sempre que a classe for instanciada na cena, similar a um construtor
     void Start()
     {
         do_earth_complete_movement = false;
         do_earth_rotation = false;
         do_earth_translation = false;
         movimenter = new SpaceMovement();
+        //Adicionando ouvintes de evento
         complete_movement_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(onCompleteMovementButtonPressed);
         complete_movement_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(onCompleteMovementButtonRealesed);
         rotation_button.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(onRotationButtonPressed);
@@ -100,6 +101,7 @@ public class SpaceControllerInterface : MonoBehaviour
 
     private void actions()
     {
+        //Chama ações baseado no controle booleano
         if (stop) return;
         sunRotation();
         if (do_earth_complete_movement) earthCompleteMovement();
