@@ -2436,7 +2436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07098036ab013c04eadfc0b49f98b822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categories_button_obj: {fileID: 2014486600}
+  credit_button_obj: {fileID: 2014486600}
   credit_page: {fileID: 1331384282}
 --- !u!114 &2014486603
 MonoBehaviour:
@@ -2654,5 +2654,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07098036ab013c04eadfc0b49f98b822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categories_button_obj: {fileID: 2113983988}
+  credit_button_obj: {fileID: 2113983988}
   credit_page: {fileID: 1331384282}
