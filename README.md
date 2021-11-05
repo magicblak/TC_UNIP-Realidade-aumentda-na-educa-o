@@ -7,9 +7,9 @@ Protótipo de um aplicativo que usa a realidade aumentada para projetar ambiente
 2. Clone o projeto em um diretório de seu computador
 3. Compile em seu dispositivo, ou simule uma resolução mobile em seus testes. (A tela de menu força a tela em retrato, portanto use uma resolução em modo retrato no menu)
 
-### APK:
+### APK e Imagens Target:
 
-Caso queira apenas testar em seu celular baixe o APK android por esse link:
+Caso queira apenas testar em seu celular baixe o APK android, e as imagens target por esse link:
 - https://drive.google.com/drive/folders/1hKZgINLRScA-PBPs6jt387h9PMf_ZhLS?usp=sharing
 
 OBS: 
