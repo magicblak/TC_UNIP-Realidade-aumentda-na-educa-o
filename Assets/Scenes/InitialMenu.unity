@@ -347,8 +347,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 464, y: -215.39635}
-  m_SizeDelta: {x: 483.78583, y: 269.1949}
+  m_AnchoredPosition: {x: 683.24, y: -215.39635}
+  m_SizeDelta: {x: 922.26, y: 269.1949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147165817
 MonoBehaviour:
@@ -383,7 +383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GEOGRAFIA
+  m_Text: GEOGRAFIA (fundaamental final)
 --- !u!222 &147165818
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1208,8 +1208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 393.5, y: -215.39635}
-  m_SizeDelta: {x: 483.78583, y: 269.1949}
+  m_AnchoredPosition: {x: 658.83, y: -200.45}
+  m_SizeDelta: {x: 971.0779, y: 269.1949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367910016
 MonoBehaviour:
@@ -1244,7 +1244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ci\xEAncia"
+  m_Text: "Ci\xEAncia \n(fundamental inicial)"
 --- !u!222 &367910017
 CanvasRenderer:
   m_ObjectHideFlags: 0
