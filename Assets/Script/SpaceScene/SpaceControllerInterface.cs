@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 public class SpaceControllerInterface : MonoBehaviour
 {
     [SerializeField] private GameObject rotation_button;//Objeto do botão rotação
-    [SerializeField] private TextMesh txt_days_count;//Objeto do botão rotação
+    [SerializeField] private Text txt_days_count;//Objeto do botão rotação
     [SerializeField] private GameObject translation_button;//Objeto do botão translação
     [SerializeField] private GameObject rotation_text;//Texto explicativo da rotação
     [SerializeField] private GameObject password_text;//Texto explicativo da rotação
@@ -31,6 +32,7 @@ public class SpaceControllerInterface : MonoBehaviour
     //Executa sempre que a classe for instanciada na cena, similar a um construtor
     void Start()
     {
+        txt_days_count = GameObject.Find("days_count_text").GetComponent<Text>();
         do_earth_complete_movement = false;
         do_earth_rotation = false;
         do_earth_translation = false;
